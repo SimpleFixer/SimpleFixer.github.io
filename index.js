@@ -1,8 +1,11 @@
-let request = fetch('https://formula1-a0ece-default-rtdb.europe-west1.firebasedatabase.app/Drivers/')
-              .then(request => request.json())
-              .then(request => console.log(request));
-
-const mainMenu = document.getElementById("main-menu");
+const driverData = fetch('https://formula1-a0ece-default-rtdb.europe-west1.firebasedatabase.app/', { headers: { 'mode': 'no.cors' }})
+                  .then(function (response){
+                    console.log('success', response);
+                    return response.json();
+                  })
+                  .catch(function (err){
+                    console.warn('Something went wrong', err)
+                  });
 
 const renderMainMenu = (drivers) => {
     
