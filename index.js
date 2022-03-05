@@ -1,4 +1,4 @@
-const driverData = fetch('https://formula1-a0ece-default-rtdb.europe-west1.firebasedatabase.app/', { headers: { 'mode': 'no.cors' }})
+const driverData = fetch('https://formula1-a0ece-default-rtdb.europe-west1.firebasedatabase.app/', { headers: { 'mode': 'no-cors' }})
                   .then(function (response){
                     console.log('success', response);
                     return response.json();
