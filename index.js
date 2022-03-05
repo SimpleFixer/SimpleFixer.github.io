@@ -1,12 +1,6 @@
-var request = new XMLHttpRequest();
-request.open("GET", "./Drivers.json", false);
-request.send(null);
-request.onreadystatechange = function() {
-  if ( request.readyState === 4 && request.status === 200 ) {
-    var my_JSON_object = JSON.parse(request.responseText);
-    console.log(my_JSON_object);
-  }
-}
+let request = fetch('https://formula1-a0ece-default-rtdb.europe-west1.firebasedatabase.app/Drivers/')
+              .then(request => request.json())
+              .then(request => console.log(request));
 
 const mainMenu = document.getElementById("main-menu");
 
@@ -20,4 +14,4 @@ const renderMainMenu = (drivers) => {
     console.log(driverData);*/
 }
 
-renderMainMenu(getDriverData("file:///C:/Users/Theodor/Documents/GitHub/SimpleFixer.github.io/Drivers.json"));
+// renderMainMenu(getDriverData("file:///C:/Users/Theodor/Documents/GitHub/SimpleFixer.github.io/Drivers.json"));
