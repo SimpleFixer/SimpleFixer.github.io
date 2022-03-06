@@ -2,7 +2,7 @@ html{
     background: #f1efef;
 }
 
-.driver-card + .driver-card{
+.margin-top{
     margin-top: 24px;
 }
 
@@ -23,6 +23,7 @@ html{
     flex-direction: row;
     border-radius: 24px;
     background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .driver-card_left{
@@ -34,7 +35,7 @@ html{
 
 .bg-red-driver{
     font-size: 2em;
-    font-style: oblique;
+    font-weight: bold;
     color: white;
     background: #ff1801;
     display: block;
@@ -42,8 +43,7 @@ html{
     border-radius: 0px 0px 24px 24px;
     height: 70px;
     padding-left: 48px;
-    align-content: center;
-    margin: auto 0;
+    text-align: center;
 }
 
 .driver-card_right{

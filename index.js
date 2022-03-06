@@ -6,7 +6,7 @@ const driverData = fetch('./Drivers.json')
                     console.log('success', drivers);
                     drivers.drivers.forEach(driver =>{
                       driverCarousel.innerHTML += `
-                      <div class="driver-card">
+                      <div class="driver-card margin-top">
                         <div class="driver-card_left">
                           <img class="driver-portrait" src="./images/${driver.lastName}.jpg" />
                           <div class="bg-red-driver">
