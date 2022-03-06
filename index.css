@@ -9,6 +9,28 @@ h3{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+#main-menu{
+    width: 100%;
+    height: 36px;
+    background: #ffffff;
+    color: #ff1801;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+#menu-right{
+    display: flex;
+    width: 600px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-item{
+    height: 100%;
+    width: 148px;
+}
+
 .margin-top{
     margin-top: 24px;
 }
