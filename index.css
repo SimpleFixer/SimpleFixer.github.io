@@ -47,7 +47,7 @@ html{
 }
 
 .driver-card_right{
-    flex-grow: 5;
+    display: flex;
     padding: 24px;
 }
 
