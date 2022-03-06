@@ -1,5 +1,6 @@
 const driverData = fetch('./Drivers.json')
-                  .then(function (response){
+                  .then(response => response.json())
+                  .then(data => {
                     console.log('success', response.json());
                     renderMainMenu(response.json());
                     return response.json();
