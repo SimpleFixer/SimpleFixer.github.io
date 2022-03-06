@@ -8,7 +8,7 @@ const driverData = fetch('./Drivers.json')
                       driverCarousel.innerHTML += `
                       <div class="driver-card">
                         <div class="driver-card_left">
-                          <img class="portrait" src="./images/${driver.lastName}.jfif" />
+                          <img class="portrait" src="./images/${driver.lastName}.jpg" />
                           <div>
                             <p>${driver.firstName} ${driver.lastName}</p></br>
                           </div>
