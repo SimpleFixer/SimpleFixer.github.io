@@ -4,6 +4,11 @@ html{
     background: #f1efef;
 }
 
+h3{
+    font-size: 1.25em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .margin-top{
     margin-top: 24px;
 }
@@ -49,9 +54,6 @@ html{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2em;
-    font-weight: bold;
     color: white;
     background: #ff1801;
     border-radius: 0px 0px 0px 24px;
@@ -59,7 +61,25 @@ html{
     padding-left: 24px;
 }
 
+.txt-bold{
+    font-weight: bold;
+}
+
 .driver-card_right{
     display: flex;
+    flex-direction: row;
+    border-radius: 0 24px 24px 0;
+    width: 100%;
+    padding: 24px;
+}
+
+.driver-stats{
+    display: flex;
+    flex-direction: column;
+}
+
+.driver-current{
+    display: flex;
+    flex-direction: column;
 }
 
