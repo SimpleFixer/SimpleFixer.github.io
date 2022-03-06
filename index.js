@@ -24,7 +24,7 @@ const driverData = fetch('./Drivers.json')
                     console.warn('Something went wrong', err)
                   });
 
-
+/*
 
 const renderMainMenu = async () => {
     
@@ -34,5 +34,7 @@ const renderMainMenu = async () => {
         mainMenu.innerHTML += `<p>${driver.firstName}</p>`;
     });
 };
+
+*/
 
 // renderMainMenu(getDriverData("file:///C:/Users/Theodor/Documents/GitHub/SimpleFixer.github.io/Drivers.json"));
