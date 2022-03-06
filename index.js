@@ -1,9 +1,8 @@
 const driverData = fetch('./Drivers.json')
-                  .then(function(response){
-                    response = response.json();
-                    console.log('success', response);
-                    renderMainMenu(response);
-                    return response;
+                  .then((response) => response.json())
+                  .then((drivers) => {
+                    console.log('success', drivers);
+                    return drivers;
                   })
                   .catch(function (err){
                     console.warn('Something went wrong', err)
@@ -11,9 +10,9 @@ const driverData = fetch('./Drivers.json')
 
 const mainMenu = document.getElementById("main-menu");
 
-const renderMainMenu = (drivers) => {
+const renderMainMenu = async () => {
     
-    console.log(drivers);
+    const data = await driverData;
     
     drivers.forEach(driver => {
         mainMenu.innerHTML += `<p>${driver.firstName}</p>`;
