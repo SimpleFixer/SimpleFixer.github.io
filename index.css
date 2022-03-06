@@ -34,6 +34,10 @@ html{
     flex-direction: column;
 }
 
+.center-image{
+    margin: 0 auto 0;
+}
+
 .bg-red-driver{
     display: flex;
     font-size: 2em;
