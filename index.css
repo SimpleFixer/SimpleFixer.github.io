@@ -1,3 +1,5 @@
+@import "./reset.css";
+
 html{
     background: #f1efef;
 }
@@ -29,27 +31,27 @@ html{
 
 .driver-card_left{
     height: 100%;
-    width: 300px;
+    width: 360px;
     padding: 0px 128px 0px 0px;
     flex-direction: column;
 }
 
 .center-image{
-    margin: 0 auto 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .bg-red-driver{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     font-size: 2em;
     font-weight: bold;
     color: white;
     background: #ff1801;
-    display: block;
-    width: 100%;
     border-radius: 0px 0px 0px 24px;
     height: 70px;
-    padding-left: 48px;
-    text-align: center;
+    padding-left: 24px;
 }
 
 .driver-card_right{
