@@ -1,9 +1,9 @@
 const driverData = fetch('./Drivers.json')
-                  .then(response => response.json())
-                  .then(data => {
-                    console.log('success', data.object.drivers);
-                    renderMainMenu(data.object.drivers);
-                    return data.object;
+                  .then(function(response){
+                    response = response.json();
+                    console.log('success', response);
+                    renderMainMenu(response);
+                    return response;
                   })
                   .catch(function (err){
                     console.warn('Something went wrong', err)
