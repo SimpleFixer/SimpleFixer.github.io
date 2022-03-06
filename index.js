@@ -1,11 +1,22 @@
-const mainMenu = document.getElementById("main-menu");
+const driverCarousel = document.getElementById("driver-carousel");
 
 const driverData = fetch('./Drivers.json')
                   .then((response) => response.json())
                   .then((drivers) => {
                     console.log('success', drivers);
                     drivers.drivers.forEach(driver =>{
-                      mainMenu.innerHTML += `<p>${driver.firstName}</p>`
+                      driverCarousel.innerHTML += `
+                      <div class="driver-card">
+                        <div class="driver-card_left">
+                          <img class="portrait" src="./images/${driver.lastName}.jfif" />
+                          <div>
+                            <p>${driver.firstName} ${driver.lastName}</p></br>
+                          </div>
+                        </div>
+                        <div class="driver-card_right">
+
+                        </div>
+                      </div>`
                     })
                     return drivers;
                   })

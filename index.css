@@ -1,0 +1,28 @@
+html{
+    background: lightgray;
+}
+
+#driver-carousel{
+    display: flex;
+    flex-direction: row;
+    max-width: 1280px;
+}
+
+.driver-card{
+    width: 100%;
+    height: 300px;
+    border-radius: 48px;
+    background: white;
+}
+
+.driver-card_left{
+    height: 100%;
+    flex-basis: 300px;
+    padding: 24px;
+}
+
+.driver-card_right{
+    flex-grow: 4;
+    padding: 24px;
+}
+
