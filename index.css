@@ -75,11 +75,13 @@ h3{
 
 .driver-stats{
     display: flex;
+    flex: 2;
     flex-direction: column;
 }
 
 .driver-current{
     display: flex;
+    flex: 1;
     flex-direction: column;
 }
 

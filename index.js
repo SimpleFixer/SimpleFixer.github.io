@@ -12,7 +12,7 @@ const driverData = fetch('./Drivers.json')
                             <img class="driver-portrait" src="./images/${driver.lastName}.jpg" />
                           </div>
                           <div class="bg-red-driver">
-                            <h3>${driver.firstName} <span class="txt-bold">${driver.lastName}. ${driver.number}</span></h3>
+                            <h3>${driver.firstName} <span class="txt-bold">${driver.lastName}.</span> ${driver.number}</h3>
                           </div>
                         </div>
                         <div class="driver-card_right">
