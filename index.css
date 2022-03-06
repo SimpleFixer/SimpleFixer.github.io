@@ -2,6 +2,10 @@ html{
     background: lightgray;
 }
 
+.driver-card + .driver-card{
+    margin-top: 24px;
+}
+
 #driver-carousel{
     display: flex;
     flex-direction: column;
@@ -36,7 +40,7 @@ html{
     display: block;
     width: 100%;
     border-radius: 0px 0px 24px 24px;
-    height: auto;
+    height: 70px;
     padding-left: 48px;
     align-content: center;
     margin: auto 0;
