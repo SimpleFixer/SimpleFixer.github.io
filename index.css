@@ -35,6 +35,7 @@ html{
 }
 
 .bg-red-driver{
+    display: flex;
     font-size: 2em;
     font-weight: bold;
     color: white;
@@ -49,6 +50,5 @@ html{
 
 .driver-card_right{
     display: flex;
-    padding: 24px;
 }
 
