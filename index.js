@@ -17,7 +17,18 @@ const driverData = fetch('./Drivers.json')
                         </div>
                         <div class="driver-card_right">
                           <div class="driver-stats">
-
+                            <table>
+                              <tr>
+                                <th class="txt-bold">Driver Stats</th>
+                                <th class="txt-bold">Current Odds</th>
+                              </tr>
+                              <tr>
+                                <td>Track Name</td>
+                              </tr>
+                              <tr>
+                                <tr>Placement at track</tr>
+                              </tr>
+                            </table>
                           </div>
                           <div class="driver-current">
 
